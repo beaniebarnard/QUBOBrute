@@ -132,7 +132,7 @@ def solve_gpu(Q: np.ndarray, c: np.float32) -> np.ndarray:
     """
     assert (
         Q.ndim == 2
-    ), f"q needs to be a square matrix. Got {Q.ndim=}, but expected q.ndim=2."
+    ), f"q needs to be a square matrix. Got {Q.ndim}, but expected q.ndim=2."
     assert Q.shape[0] == Q.shape[1], "q needs to be a square matrix."
 
     nbits = Q.shape[0]
